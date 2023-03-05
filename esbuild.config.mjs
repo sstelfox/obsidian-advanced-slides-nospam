@@ -29,7 +29,7 @@ if you want to view the source, please visit the github repository of this plugi
 `;
 
 const prod = (process.argv[2] === 'production');
-const TEST_VAULT = 'test-vault/.obsidian/plugins/obsidian-advanced-slides';
+const TEST_VAULT = 'test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam';
 
 function build() {
     esbuild.build({

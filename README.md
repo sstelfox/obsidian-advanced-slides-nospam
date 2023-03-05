@@ -6,6 +6,11 @@ funding requests. I do not accept money for this fork, please send all
 donations and funding to the original project. I just didn't want to deal with
 intrusive pop-ups in my productivity tooling.
 
+This will re-use the existing settings for the normal edition so users can
+easily swap back and forth between the versions without loosing their
+configuration. This should not be installed at the same time as the normal
+version.
+
 ---
 
 <div align="center">

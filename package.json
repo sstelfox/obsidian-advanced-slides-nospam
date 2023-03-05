@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-advanced-slides",
+	"name": "obsidian-advanced-slides-nospam",
 	"version": "1.20.0",
-	"description": "Create markdown-based presentations in Obsidian",
+	"description": "Create markdown-based presentations in Obsidian (No Spam Edition)",
 	"main": "src/main.ts",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -12,7 +12,7 @@
 		"docs": "cd docs && hugo serve",
 		"all": "node esbuild.config.mjs & cd docs && hugo serve"
 	},
-	"repository": "git@github.com:MSzturc/obsidian-advanced-slides.git",
+	"repository": "git@github.com:sstelfox/obsidian-advanced-slides-nospam.git",
 	"author": "Matthäus Szturc",
 	"license": "MIT",
 	"devDependencies": {

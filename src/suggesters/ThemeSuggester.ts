@@ -8,7 +8,7 @@ export class ThemeSuggest extends TextInputSuggest<string> {
 	getSuggestions(inputStr: string): string[] {
 		const adapter = this.app.vault.adapter as FileSystemAdapter;
 		const vaultDirectory = adapter.getBasePath();
-		const pluginDirectory = path.join(vaultDirectory, this.app.vault.configDir, 'plugins/obsidian-advanced-slides/');
+		const pluginDirectory = path.join(vaultDirectory, this.app.vault.configDir, 'plugins/obsidian-advanced-slides-nospam/');
 		const cssDirectory = path.join(pluginDirectory, 'css/');
 		const themeDirectory = path.join(pluginDirectory, 'dist/theme/');
 
