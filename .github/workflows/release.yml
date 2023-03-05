@@ -38,15 +38,11 @@ jobs:
         run: npm run build
       - name: Test advanced slides
         run: npm test
-      - uses: ArtiomTr/jest-coverage-report-action@v2.0-rc.6
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          package-manager: yarn
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: 'obsidian-advanced-slides.zip'
+          filename: 'obsidian-advanced-slides-nospam.zip'
           directory: 'test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam/'
       - name: Create Release
         uses: ncipollo/release-action@v1.9.0
