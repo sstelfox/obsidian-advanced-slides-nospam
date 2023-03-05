@@ -2,9 +2,11 @@
 
 This is a fork of [Advanced Slides for
 Obsidian](https://github.com/MSzturc/obsidian-advanced-slides) that won't spam
-pop-ups asking for funding. I do not accept money for this fork, please send
-all donations and funding to the original project. I just didn't want to deal
-with intrusive pop-ups in my productivity tooling.
+funding requests. I do not accept money for this fork, please send all
+donations and funding to the original project. I just didn't want to deal with
+intrusive pop-ups in my productivity tooling.
+
+---
 
 <div align="center">
 Advanced Slides is the perfect slide deck extension for <a href="https://obsidian.md">Obsidian</a>
