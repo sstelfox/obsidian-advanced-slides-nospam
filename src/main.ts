@@ -107,7 +107,7 @@ export default class AdvancedSlidesPlugin extends Plugin {
 
 		if (!existsSync(distDirectory) || this.isOldVersion(pluginDirectory)) {
 			//Download binary
-			const downloadUrl = `https://github.com/MSzturc/obsidian-advanced-slides/releases/download/${version}/obsidian-advanced-slides.zip`;
+			const downloadUrl = `https://github.com/sstelfox/obsidian-advanced-slides-nospam/releases/download/${version}/obsidian-advanced-slides.zip`;
 
 			const bufs: Uint8Array[] = [];
 			let buf: Uint8Array;
@@ -333,57 +333,6 @@ export default class AdvancedSlidesPlugin extends Plugin {
 		url.pathname = this.fixedEncodeURIComponent(this.target.path);
 
 		this.openUrl(url);
-		this.showMotm();
-	}
-
-	async showMotm() {
-
-		const prevDate = this.settings.motm;
-		const parts = prevDate.split(/[- :]/);
-		const currentdate = new Date()
-		const cur_month = currentdate.toISOString().split(/[- :]/)[1];
-
-		if (!parts || (parts.length < 2) || parts[1] !== cur_month) {
-
-			this.settings.motm = currentdate.toISOString();
-			await this.saveData(this.settings);
-
-			const mod = new Modal(app);
-			mod.containerEl.addClass('releaseNotes');
-			mod.titleEl.createEl('h2', { text: 'Letter from Advanced Slides Development' });
-
-			const html = `Dear Advanced Slides user,<br><br> 
-		every beginning is difficult. As a leading user of Advanced Slides, you know how handy it was when you found wide documentation as well as help from the developers on the Obsidian forum or discord to get started with Advanced Slides.<br><br>
-		
-
-		With over <b>240.000</b> downloads and over <b>40.000</b> users using Advanced Slides every day, Advanced Slides is on of the top 10 plugins for Obsidian. 
-		<br><br>
-
-		
-		However, with the growing number of users, the expenses for support also increase.<br>
-		On average we get <b>50-60</b> support requests via twitter, github, discord, forum or private message every week.
-		We invest <b>3-5</b> hours every week to answer these requests.<br> We do that in our free time.<br><br>
-
-
-		It is hard to keep pace and provide new users the same quality in their onboarding that you had before.
-		
-		This is where you come into play. 
-		
-		A sponsorship of you allows the developers of Advanced Slides to spend more time on community work to give new users the same user experience you had when you started your Advanced Slides journey.
-		
-		<br><br>
-		<a href="https://github.com/sponsors/MSzturc">Become a Sponsor</a>
-
-		<br><br>
-
-		`;
-
-			const div = mod.contentEl.createEl('div');
-			div.innerHTML = html;
-
-			mod.open();
-		}
-
 	}
 
 	private fixedEncodeURIComponent(str: string) {
@@ -391,7 +340,6 @@ export default class AdvancedSlidesPlugin extends Plugin {
 			return '%' + c.charCodeAt(0).toString(16);
 		});
 	}
-
 
 	private async openUrl(url: URL) {
 		const instance = this.getViewInstance();
