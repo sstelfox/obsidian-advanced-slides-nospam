@@ -47,10 +47,10 @@ jobs:
         with:
           type: 'zip'
           filename: 'obsidian-advanced-slides.zip'
-          directory: 'test-vault/.obsidian/plugins/obsidian-advanced-slides/'
+          directory: 'test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam/'
       - name: Create Release
         uses: ncipollo/release-action@v1.9.0
         with:
-          artifacts: "test-vault/.obsidian/plugins/obsidian-advanced-slides/obsidian-advanced-slides.zip, test-vault/.obsidian/plugins/obsidian-advanced-slides/main.js, test-vault/.obsidian/plugins/obsidian-advanced-slides/manifest.json, test-vault/.obsidian/plugins/obsidian-advanced-slides/styles.css"
+          artifacts: "test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam/obsidian-advanced-slides-nospam.zip, test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam/main.js, test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam/manifest.json, test-vault/.obsidian/plugins/obsidian-advanced-slides-nospam/styles.css"
           token: ${{ secrets.GITHUB_TOKEN }}
           body: ${{steps.build_changelog.outputs.changelog}}

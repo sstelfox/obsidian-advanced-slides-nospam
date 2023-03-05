@@ -1,33 +1,12 @@
-<h1 align="center">Advanced Slides for Obsidian</h1>
+<h1 align="center">Advanced Slides for Obsidian - No Spam Edition</h1>
 
-<p align="center">
-  <img  src="https://raw.githubusercontent.com/MSzturc/obsidian-advanced-slides/main/imgs/demo.gif">
-</p>
-
-<p align="center">
-    <a href="https://github.com/MSzturc/obsidian-advanced-slides/releases/latest">
-		<img src="https://img.shields.io/github/manifest-json/v/MSzturc/obsidian-advanced-slides?color=blue">
-	</a>
-    <img src="https://img.shields.io/github/release-date/MSzturc/obsidian-advanced-slides">
-	<a href="https://github.com/MSzturc/obsidian-advanced-slides/blob/main/LICENSE">
-		<img src="https://img.shields.io/github/license/MSzturc/obsidian-advanced-slides">
-	</a>
-	<img src="https://img.shields.io/github/downloads/MSzturc/obsidian-advanced-slides/total">
-	<a href="https://github.com/MSzturc/obsidian-advanced-slides/issues">
-		<img src="https://img.shields.io/github/issues/MSzturc/obsidian-advanced-slides">
-	</a>
-	<br>
-	<img src="https://img.shields.io/tokei/lines/github/MSzturc/obsidian-advanced-slides">
-	<a href="https://www.codefactor.io/repository/github/mszturc/obsidian-advanced-slides/stats">
-		<img src="https://img.shields.io/codefactor/grade/github/MSzturc/obsidian-advanced-slides">
-	</a>
-	<a href="https://mszturc.github.io/obsidian-advanced-slides/lcov-report/">
-		<img src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/MSzturc/a2879612aa47b6364392d94cae882c50/raw/obsidian-advanced-slides_coverage.json">
-	</a>
-</p>
+This is a fork of [Advanced Slides for
+Obsidian](https://github.com/MSzturc/obsidian-advanced-slides) that won't spam
+pop-ups asking for funding. I do not accept money for this fork, please send
+all donations and funding to the original project. I just didn't want to deal
+with intrusive pop-ups in my productivity tooling.
 
 <div align="center">
-
 Advanced Slides is the perfect slide deck extension for <a href="https://obsidian.md">Obsidian</a>
 </div>
 
